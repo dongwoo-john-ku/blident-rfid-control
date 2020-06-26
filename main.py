@@ -154,7 +154,8 @@ class MyThread(threading.Thread):
                             rfidData = ''.join(Read_data[0:10])
                             print(rfidData)
                             loggedDataView(rfidData, curTime, rfidDataAll)
-
+                    else:
+                        print("HERE")
                             # ReadTable(Read_data)
 
             # sleep 'n'second before next polling
